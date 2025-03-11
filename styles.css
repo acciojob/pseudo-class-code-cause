@@ -1,4 +1,3 @@
-/*  your css code here. If applicable */
 /* Apply styles to the main container */
 #container {
     margin: 20px;
@@ -8,7 +7,7 @@
 
 /* Insert content before the container */
 #container::before {
-    content: 'Special Text Before';
+    content: "Before Element";
     color: #f00; /* Red color */
     font-size: 20px;
     display: block; /* Ensures it appears on a new line */
@@ -17,9 +16,16 @@
 
 /* Insert content after the container */
 #container::after {
-    content: 'Special Text After';
+    content: "After Element";
     color: #f00; /* Red color */
     font-size: 20px;
     display: block; /* Ensures it appears on a new line */
     margin-top: 10px; /* Space between the container content and this */
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
 }
