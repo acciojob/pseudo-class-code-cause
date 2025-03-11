@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+/* Apply styles to the main container */
+#container {
+    margin: 20px;
+    border: 2px solid #000; /* Optional: for better visualization */
+    padding: 10px;
+}
+
+/* Insert content before the container */
+#container::before {
+    content: 'Special Text Before';
+    color: #f00; /* Red color */
+    font-size: 20px;
+    display: block; /* Ensures it appears on a new line */
+    margin-bottom: 10px; /* Space between this and the container content */
+}
+
+/* Insert content after the container */
+#container::after {
+    content: 'Special Text After';
+    color: #f00; /* Red color */
+    font-size: 20px;
+    display: block; /* Ensures it appears on a new line */
+    margin-top: 10px; /* Space between the container content and this */
+}
